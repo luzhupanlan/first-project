@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        QQ号：
+        <input type="text" name="txtQQ" data-rule="qq" >
+        <span></span>
+        <br> 
+        邮箱：
+        <input type="text" name="txtEMail" data-rule="email">
+        <span></span>
+        <br> 
+        手机：
+        <input type="text" name="txtPhone" data-rule="phone">
+        <span></span>
+        <br> 
+        生日：
+        <input type="text" name="txtBirthday" data-rule="date">
+        <span></span>
+        <br> 
+        姓名：
+        <input type="text" name="txtName" data-rule="cn">
+        <span></span>
+        <br>
+    </form>
+</body>
+
+</html>
+<script src="addCheck.js"></script>
+<script>
+    addCheck('form');
+</script>

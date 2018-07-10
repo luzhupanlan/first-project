@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  
+  //匹配
+//  正则.test(字符串)
+  
+  //提取
+//  var str = "张三：1000，李四：5000，王五：8000。";
+//  //str.match(正则);  从那个字符串中提取就用这个字符串调用match方法 ,返回一个数组
+////  正则可以传入一个参数 g 全局
+//  console.log(str.match(/\d+/g));
+//
+//
+//   // 分组提取
+//  var dateStr = '2016-1-5';
+//  var reg = /(\d{4})-(\d{1,2})-\d{1,2}/;
+//  reg.test(dateStr); //让正则和字符创建立关系
+//  console.log(RegExp.$1);
+//  console.log(RegExp.$2);
+  
+  //替换
+  //把逗号全部替换成!
+//  var str = "abc,efg,123，abc,123，a";
+//  console.log(str.replace(',', '!'));
+//  console.log(str.replace(/,|，/g, '!'));
+  
+  
+  //参数:
+//  g 全局
+//  i 忽略大小写
+  
+//  var reg = /^a$/ig;
+//  console.log(reg.test('A'));
+  
+//  RegExp -- >  js中正则的构造函数
+//  /a/  --> 正则的字面量形式  -- > new RegExp('a', 'i');
+//  var reg = /^a$/i;
+//  var reg = new RegExp('^a$', 'i');
+//
+//  console.log(reg.test('A'));
+  
+//  var reg = /\d/;
+//  var reg = new RegExp('\d'); //此时没有把\d当做是特殊字符
+//  var reg = new RegExp('\\d'); //此时把第一个\当做转移符
+//  console.log(reg.test('1'));
+
+
+</script>
+
+</body>
+</html>

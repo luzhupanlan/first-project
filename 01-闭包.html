@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+//  mdn: 函数以及函数作用的结合
+//  js高级编程: 每一个函数都是一个闭包
+//  我们一般谈论的闭包: 内部函数引用了外部函数的变量,那么外部函数就形成了一个闭包(有意义的闭包)
+  
+//   闭包的作用:
+//   1. 私有化数据
+//   2. 数据保持
+
+//    闭包的缺点:
+//      外部的变量由于被内部的函数引用了,所有外部的函数不会在栈中消失,这样有可能造成栈溢出
+  
+  //var money = 1000;//如果在全局,可能会全局变量污染,那么我们的数据就不安全了
+//  function fn(){
+//    var money  = 1000;
+//    return money;
+//  }
+//
+//  //比如用户要花钱
+//  var money = fn();
+//  money -= 100;
+//  console.log(money);
+  
+  
+//  function fn(){
+//    var money = 1000;
+//    return {
+//      pay : function(num){
+//        money -= num;
+//      },
+//      query : function(){
+//        console.log(money);
+//      },
+//      add : function(num){
+//        money += num;
+//      }
+//    }
+  }
+//
+//  var moneyManger = fn();
+////  moneyManger.pay(100);
+////  moneyManger.query();
+////  moneyManger.add(2000);
+////  moneyManger.query();
+//
+//    function fn(){
+//      var money = 1000;
+//    }
+//
+//    fn();
+  
+//  词法作用域(静态作用域):
+//  外部作用域不能使用内部作用的变量
+//  查找变量时,遵循作用域链去查找
+//  分析代码之前,要先进性预解析
+//  代用函数,函数内部也要进行预解析
+//  给变量赋值之前,一定要先找到变量
+</script>
+</body>
+</html>
